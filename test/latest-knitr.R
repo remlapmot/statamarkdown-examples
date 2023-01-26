@@ -1,0 +1,6 @@
+remotes::install_github("yihui/knitr")
+# rstudioapi::restartSession()
+rmarkdown::render("test/output-example-latest-knitr.Rmd")
+# rstudioapi::restartSession()
+install.packages("knitr")
+# rstudioapi::restartSession()
