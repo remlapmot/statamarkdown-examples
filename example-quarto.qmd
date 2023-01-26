@@ -1,0 +1,19 @@
+---
+format:
+  html:
+    embed-resources: true
+engine: knitr
+---
+
+```{r}
+library(Statamarkdown)
+```
+
+```{stata}
+display "Hello from Quarto"
+```
+
+```{stata}
+sysuse auto, clear
+regress price weight
+```
