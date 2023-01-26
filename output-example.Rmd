@@ -1,0 +1,48 @@
+---
+title: "display command output examples"
+output: pdf_document
+papersize: a4
+---
+
+```{r setup}
+# remotes::install_github("hemken/statamarkdown")
+library(Statamarkdown)
+library(sessioninfo)
+```
+
+Output for this chunk is missing
+```{stata}
+display "Hello 1"
+```
+
+Output correctly displayed with the first blank line removed
+```{stata}
+
+di "Hello 2"
+```
+
+Output from the first command omitted
+```{stata}
+di "Hello 3"
+di "Hello 4"
+```
+
+Checking if these occur without the use of string quotes in the command
+
+```{stata}
+display 1
+```
+
+```{stata}
+
+di 2
+```
+
+```{stata}
+di 3
+di 4
+```
+
+```{r}
+sessioninfo::session_info()
+```
