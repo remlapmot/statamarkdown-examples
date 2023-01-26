@@ -1,0 +1,20 @@
+---
+format:
+  html:
+    embed-resources: true
+engine: knitr
+---
+
+```stata
+display "Here's some Stata code that won't be executed"
+```
+
+````{verbatim}
+```{stata}
+display "Some more Stata code that won't be executed"
+```
+````
+
+```{{stata}}
+display "Some Stata code that won't be executed"
+```
