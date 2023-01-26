@@ -43,6 +43,16 @@ di 3
 di 4
 ```
 
+```{stata}
+
+csi 75 82 383 366
+
+```
+
+```{stata}
+csi 75 82 383 366
+```
+
 ```{r}
 sessioninfo::session_info()
 ```
