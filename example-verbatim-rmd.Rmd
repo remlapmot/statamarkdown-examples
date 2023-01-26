@@ -1,0 +1,13 @@
+---
+output: html_document
+---
+
+```stata
+display "Here's some Stata code that won't be executed"
+```
+
+````{verbatim}
+```{stata}
+display "Some more Stata code that won't be executed"
+```
+````
