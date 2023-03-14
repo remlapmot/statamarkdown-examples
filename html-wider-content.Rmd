@@ -1,0 +1,23 @@
+---
+title: "Wider HTML body"
+date: "2023-03-14"
+output: html_document
+---
+
+```{css echo=FALSE}
+body {
+  min-width: 100% !important;
+/*  2000px !important;
+  margin: auto;
+*/
+}
+```
+
+```{r message=FALSE}
+library(Statamarkdown)
+```
+
+```{stata}
+sysuse auto, clear
+regress mpg price
+```
