@@ -1,0 +1,20 @@
+---
+title: "Wider HTML content"
+output: html_document
+---
+
+```{css echo=FALSE}
+.main-container { 
+  width: 1800px;
+  max-width: 2800px;
+}
+```
+
+```{r message=FALSE}
+library(Statamarkdown)
+```
+
+```{stata}
+sysuse auto, clear
+regress mpg price
+```
