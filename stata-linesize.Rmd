@@ -1,0 +1,34 @@
+---
+title: "Stata linesize"
+output: html_document
+---
+
+```{r message=FALSE}
+library(Statamarkdown)
+```
+
+```{stata}
+set linesize 52
+sysuse auto, clear
+regress mpg price
+```
+
+```{stata}
+set linesize 72
+sysuse auto, clear
+regress mpg price
+```
+
+Default is linesize 80.
+
+```{stata}
+set linesize 80
+sysuse auto, clear
+regress mpg price
+```
+
+```{stata}
+set linesize 96
+sysuse auto, clear
+regress mpg price
+```
