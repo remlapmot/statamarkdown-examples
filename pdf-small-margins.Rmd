@@ -1,0 +1,17 @@
+---
+title: "PDF with small margins"
+author: "TP"
+date: "2023-03-14"
+geometry: margin=1in
+output: pdf_document
+papersize: a4
+---
+
+```{r message=FALSE}
+library(Statamarkdown)
+```
+
+```{stata}
+sysuse auto, clear
+regress mpg price
+```
