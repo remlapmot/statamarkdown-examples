@@ -1,0 +1,17 @@
+---
+title: "Make pdf font smaller"
+author: "TP"
+date: "2023-03-14"
+output: pdf_document
+fontsize: 12pt
+papersize: a4
+---
+
+```{r message=FALSE}
+library(Statamarkdown)
+```
+
+```{stata}
+sysuse auto, clear
+regress price weight
+```
