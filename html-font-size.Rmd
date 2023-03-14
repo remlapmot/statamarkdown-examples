@@ -1,0 +1,26 @@
+---
+title: "Some HTML settings"
+output: html_document
+---
+
+```{css echo=FALSE}
+body {
+  font-size: 10px;
+}
+
+pre {
+  font-size: 10px;
+}
+```
+
+```{r message=FALSE}
+library(Statamarkdown)
+```
+
+Some normal/body text.
+
+```{stata}
+* Some pre text
+sysuse auto, clear
+reg mpg price
+```
