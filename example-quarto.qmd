@@ -16,3 +16,7 @@ display "Hello from Quarto"
 sysuse auto, clear
 regress price weight
 ```
+
+```{stata}
+about
+```
